@@ -2,8 +2,8 @@
 describe("Contacts Test Suite", function(){
 
 	//var request = require('request');
-	var request = require('C:/Program Files/nodejs/node_modules/npm/node_modules/request')
-	var base_url = "http://mycontactsvc.com:3000";
+	var request = require('C:/Program files/nodejs/node_modules/npm/node_modules/request')
+	var base_url = "http://localhost:3000";
 	var contacts_url = base_url + "/contacts";
 
 	describe("hello world", function(){
@@ -31,7 +31,7 @@ describe("Contacts Test Suite", function(){
 			contact.lastName = "peri";
 			contact.phone = "23002300";
 
-			console.log(JSON.stringify(contact));
+			//console.log(JSON.stringify(contact));
 		    
 		    request.post({url: contacts_url,
 		    			  body: contact,
@@ -82,20 +82,21 @@ describe("Contacts Test Suite", function(){
 
 	//TODO: Fill out the test case below that posts a message to a contact
 	// and retrieves it back.
-	describe("post and get message to contact", function(){
+	xdescribe("post and get message to contact", function(){
 
 		it("should post message to contact", function(done){
 			//TODO: Write your test case here.
 			done();
+						
 
 		});
 
 		it("should get message for contact", function(done){
 			//TODO: Write your test case here.
-			done();
-
+		    done();
+							
+							
 		});
-
 	});
 
 });
